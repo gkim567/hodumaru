@@ -1,0 +1,15 @@
+*inverter design&sim
+
+*Circuit_Produce Circuit_Name Circuit_Port1 Circuit_Port2 ...  
+.subckt Inverter out in vdd vss
+
+
+*name Drain Gate Source Body Instance Width=value Length=value
+M_p out in vdd vdd PMOS_VTL w=10u l=0.05u
+M_n out in gnd gnd NMOS_VTL w=5u l=0.05u
+
+
+.subckt Inverter out in vdd vss
+M_p out in vdd vdd PMOS_VTL w=10u l=0.05u
+M_n out in gnd gnd NMOS_VTL w=5u l=0.05u
+.ends
